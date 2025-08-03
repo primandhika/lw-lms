@@ -54,6 +54,15 @@
         <div class="col-md-6 col-lg-3 mb-3">
             <div class="card h-100">
                 <div class="card-body text-center">
+                    <h5 class="card-title">Institusi</h5>
+                    <p class="card-text">Kelola kampus dan sekolah</p>
+                    <a href="/dashboard/institutions" class="btn btn-primary">Kelola</a>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-6 col-lg-3 mb-3">
+            <div class="card h-100">
+                <div class="card-body text-center">
                     <h5 class="card-title">Kriteria Nilai</h5>
                     <p class="card-text">Kategorikan nilai dari huruf ke angka</p>
                     <a href="/dashboard/criteria" class="btn btn-warning">Kelola</a>

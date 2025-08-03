@@ -4,15 +4,15 @@ namespace App\Models;
 
 use CodeIgniter\Model;
 
-class ClassModel extends Model
+class Institution extends Model
 {
-    protected $table            = 'classes';
+    protected $table            = 'institutions';
     protected $primaryKey       = 'id';
     protected $useAutoIncrement = true;
     protected $returnType       = 'array';
     protected $useSoftDeletes   = false;
     protected $protectFields    = true;
-    protected $allowedFields    = ['class_name', 'class_code', 'description', 'year', 'teacher_id', 'is_active'];
+    protected $allowedFields    = ['name', 'code', 'type', 'address', 'is_active'];
 
     protected bool $allowEmptyInserts = false;
     protected bool $updateOnlyChanged = true;
@@ -29,11 +29,11 @@ class ClassModel extends Model
 
     // Validation
     protected $validationRules      = [
-        'class_name' => 'required|max_length[255]',
-        'class_code' => 'permit_empty|max_length[50]|is_unique[classes.class_code]',
-        'description' => 'permit_empty',
-        'year' => 'permit_empty|numeric',
-        'teacher_id' => 'permit_empty|numeric'
+        'name' => 'required|max_length[255]',
+        'code' => 'permit_empty|max_length[50]',
+        'type' => 'required|in_list[universitas,institut,sekolah_tinggi,politeknik,sma,smk,smp,sd,lainnya]',
+        'address' => 'permit_empty',
+        'is_active' => 'permit_empty|in_list[0,1]'
     ];
     protected $validationMessages   = [];
     protected $skipValidation       = false;

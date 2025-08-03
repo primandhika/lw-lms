@@ -70,7 +70,7 @@ class Admin extends BaseController
     public function logout()
     {
         session()->destroy();
-        return redirect()->to('/syslog');
+        return redirect()->to('/');
     }
     
     private function isAdminLoggedIn()

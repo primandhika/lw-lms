@@ -13,7 +13,7 @@ class User extends Model
     protected $useSoftDeletes   = false;
     protected $protectFields    = true;
     protected $allowedFields    = [
-        'username', 'email', 'password', 'full_name', 'role_id', 'is_active', 'bio', 'nomor_kontak'
+        'username', 'email', 'password', 'full_name', 'role_id', 'institution_id', 'is_active', 'bio', 'nomor_kontak'
     ];
 
     protected bool $allowEmptyInserts = false;
