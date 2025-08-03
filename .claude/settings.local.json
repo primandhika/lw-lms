@@ -1,0 +1,16 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(php spark make:migration:*)",
+      "Bash(php spark make:model:*)",
+      "Bash(php spark make:controller:*)",
+      "Bash(mkdir:*)",
+      "Bash(php spark:*)",
+      "Bash(mysql:*)",
+      "Bash(curl:*)",
+      "Bash(git init:*)",
+      "Bash(git remote add:*)"
+    ],
+    "deny": []
+  }
+}
