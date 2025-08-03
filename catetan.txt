@@ -1,0 +1,22 @@
+Handle user login
+- Kalau udah berhasil kebikin tapi belum approve -> halaman transit
+- Kalau udah berhasil kebikin dan sudah approve pengajar -> detail kelas (buat saja detail kelasnya berisi info dulu: "Hai, {Nama Lengkap} ({NIM}, kamu sedang berada di kelas {Nama Kelas} - Detail Kelas sedang Kosong)) 
+
+Perlu tabel
+- users_joined-classes, karena satu user bisa join ke beberapa kelas
+- handle login di beranda selalu terarah ke http://localhost:8080/index.php/ kalau sudah login, bukannya halaman login siswa
+
+Buat Class Detail
+- Dimulai kelas, berakhir tanggal
+- tampilan logo institusi
+
+Di link http://localhost:8080/CE7E0452
+setelah selesai berhasil daftar harusnya, login dahulu jangan langsung lanjut ke kelas
+dan tombol bergabung ke kelas hilangkan saja, juga kembali ke berandanya tidak usah ada
+
+
+Alert Handling untuk jadi bahasa Indoensia:
+Silakan perbaiki kesalahan berikut:
+Error: Duplicate entry 'siswa@contoh.com' for key 'email'
+
+halaman 404 berisi error RBP Media dgn email sysadmin@rbpmedia.id
